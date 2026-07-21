@@ -28,12 +28,10 @@ We are building a robust, domain-driven architecture to ensure absolute data int
 
 *   **Core Database:** Heavily optimized PostgreSQL 18 with inline constraints and static audit trails.
 *   **Search & Indexing:** High-performance background indexing powered by Rust.
-*   **Services:** *(Add your backend stack here later, e.g., Node.js / Go / Python)*
+*   **Services:** Tonic, Rust
 
 ## 🤝 Open Positions & Collaboration
 CuraVite is currently a private venture under active development. Our repositories contain proprietary schemas and architectures.
-
-If you are a team member, please refer to the `CONTRIBUTING.md` file located in this repository for local environment setup instructions, Git workflows, and coding standards.
 
 <div align="center">
   <sub>© 2026 CuraVite. All rights reserved.</sub>

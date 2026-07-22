@@ -1,0 +1,11 @@
+name: PR In Review
+on:
+  pull_request:
+    types: [opened, reopened, ready_for_review, converted_to_draft]
+
+jobs:
+  call-pr-in-review:
+    uses: CuraVite/.github-private/.github/workflows/pr-in-review.yml@main
+    secrets:
+      APP_ID: ${{ secrets.APP_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}

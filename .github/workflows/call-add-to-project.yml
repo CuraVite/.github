@@ -1,0 +1,13 @@
+name: Auto-Add to Project
+on:
+  issues:
+    types: [opened, reopened]
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  call-add-to-project:
+    uses: CuraVite/.github-private/.github/workflows/add-to-project.yml@main
+    secrets:
+      APP_ID: ${{ secrets.APP_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
